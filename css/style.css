@@ -1,0 +1,356 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+#MainHead {
+
+    font-size: 3.75rem; /* Use rem for better scalability */
+    margin-left: 1rem; /* Use rem for consistent spacing */
+    margin-top: 1.25rem; /* Use rem for consistent spacing */
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(29, 181, 184);
+    text-align: center; /* Center the heading */
+    text-decoration:underline;
+}
+
+
+
+
+#navbar ul {
+    background-color: rgb(183, 194, 211);
+    list-style: none;
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 20px;
+    margin: -10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Align items to the sides */
+    font-size: 2vw;
+    gap: 0.5em; /* Added space between items */
+}
+
+#website-by {
+    margin-left: auto; /* Push the item to the right */
+    margin-top: 15px;
+    font-size: 1.6vw;
+    font-family: cursive, bold;
+    color: rgba(29, 124, 67, 0.876);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#website-by:hover {
+    color: rgb(94, 134, 199);
+    transform: scale(1.05);
+}
+
+#a1, #a2, #a3 {
+    text-align: center;
+    height: 45px;
+    border-radius: 15px;
+    padding: 15px 20px 15px;
+    background-color: rgb(114, 154, 219);
+    margin-right: 15px;
+    margin-top: 5px;
+    font-size: 1.5vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#a1:hover, #a2:hover {
+    background-color: rgb(94, 134, 199);
+    transform: scale(1.05);
+}
+
+a:link {
+    color: rgb(39, 39, 12);
+    text-decoration: none;
+}
+
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+#navbar #a3 {
+    padding: 5px;
+    margin: 7px;
+    background-color: transparent;
+}
+/* /----------------------* navbar and background ------------- */
+
+@media screen and (max-width: 431px) {
+    #MainHead {
+        font-size: 1.75rem;
+        margin-left: -3rem;
+        margin-top: 1.25rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(29, 181, 184);
+        text-align: center; /* Center the heading */
+        text-decoration:underline;
+    }
+    #a1, #a2, #a3 {
+        text-align: center;
+        height: 8px;
+        border-radius: 15px;
+        padding: 7px 16px 17px;
+        background-color: rgb(114, 154, 219);
+        margin-right: 9px;
+        margin-top: 2px;
+        font-size: 4.5vw;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    #navbar #website-by {
+        margin-top: -99px;
+        margin-left: -34px;
+        font-size: 4vw;
+        margin-right: 50px;
+    }
+
+    #navbar #instaimg {
+        height: 7vw;
+    }
+    #navbar #heart {
+        display: inline-block;
+        vertical-align: middle;
+        width: 5vw;
+        margin-left: 159px;
+        margin-top: -25px;
+        height: auto;
+    }
+
+    #a3 {
+        height: 35vw;
+    }
+    #navbar ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        padding: 10px;
+    }
+    #website-by {
+        margin-top: 10px;
+        font-size: 4vw;
+    }
+        
+      .photo-gallery  #img1 {
+        margin-top: 62px;
+        height: 233px;
+        width: 140px;
+        }
+
+    .photo-gallery #img2 {
+        height: 232px;
+        width: 179px;
+        }
+     .photo-gallery  #img3 {
+            height: 196px;
+            width: 152px;
+        }
+
+}
+
+
+@media screen and (min-width: 431px) and (max-width: 900px) {
+    #MainHead {
+        font-size: 1.75rem;
+        margin-left: -3rem;
+        margin-top: 1.25rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(29, 181, 184);
+        text-align: center; /* Center the heading */
+        text-decoration:underline;
+    }
+    
+    #a1, #a2, #a3 {
+        text-align: center;
+        height: 13px;
+        border-radius: 15px;
+        padding: 5px 19px 14px;
+        background-color: rgb(114, 154, 219);
+        margin-right: 15px;
+        margin-top: 5px;
+        font-size: 2.5vw;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    #navbar #instaimg {
+        margin-top: -10px;
+        height: 40px;
+        margin-left: -15px;
+    }
+    #website-by {
+        margin-left: auto;
+        margin-top: 15px;
+        font-size: 13px;
+        font-family: cursive, bold;
+        color: rgba(29, 124, 67, 0.876);
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    #navbar #heart {
+        height: 3vw;
+        margin-top: 13px;
+    }
+    .photo-gallery  #img1 {
+        margin-top: 62px;
+        height: 233px;
+        width: 140px;
+        }
+
+    .photo-gallery #img2 {
+        height: 232px;
+        width: 179px;
+        }
+     .photo-gallery  #img3 {
+            height: 230px;
+            width: 180px;
+        }
+
+
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.photo-gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid #ad9c9c; /* Add a white border */
+    box-shadow: 0 4px 8px rgba(133, 81, 81, 0.1);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, border-color 0.3s ease-out;
+    opacity: 0;
+    animation: fadeInScale 1s ease-out forwards;
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: #5e86c7; /* Change border color on hover */
+}
+
+#img1 {
+    margin-top: 80px;
+    height: 900px;
+    width: 500px;
+}
+
+#img2 {
+    height: 900px;
+    width: 650px;
+}
+
+#img3 {
+    height: 900px;
+    width: 700px;
+}
+@media screen and (min-width: 900px) and (max-width: 1444px) {
+    #navbar ul {
+        background-color: rgb(183, 194, 211);
+        list-style: none;
+        text-decoration: none;
+        border-radius: 2px;
+        padding: 18px;
+        margin: -14px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        font-size: 2vw;
+        gap: 0.5em;
+    }
+
+#a1, #a2, #a3 {
+    text-align: center;
+    height: 13px;
+    border-radius: 15px;
+    padding: 9px 17px 27px;
+    background-color: rgb(114, 154, 219);
+    margin-right: 15px;
+    margin-top: 5px;
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.3sease, transform 0.3sease;
+}
+#instaimg {
+    height: 44px;
+    margin-top: -6px;
+    margin-left: -15px;
+}
+#img1 {
+    margin-top: 80px;
+    height: 359px;
+    width: 226px;
+}
+#img2 {
+    height: 360px;
+    width: 262px;
+}
+#img3 {
+    height: 364px;
+    width: 280px;
+}
+}
+/* Add styles for the "My few pics" section */
+#MainHead {
+    font-family: 'Georgia', serif; /* Use a beautiful serif font */
+    color: #b1ed26; /* Set a nice color */
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Add some margin */
+    font-size: 27px; /* Increase font size */
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transition effects */
+}
+
+/* Add hover effect for the "My few pics" section */
+#MainHead:hover {
+    color: #2980b9; /* Change color on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Add animation for the "My few pics" section */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#MainHead {
+    animation: fadeIn 1s ease-out forwards; /* Apply the fadeIn aniMainHead */
+}
